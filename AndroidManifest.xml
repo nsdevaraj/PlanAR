@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="auto"
+    package="com.adams.awcoe.spaceplanar.app"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:targetSdkVersion="11"
+        android:minSdkVersion="10"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    
+    <uses-feature android:name="android.hardware.camera"></uses-feature> 
+    
+    <application
+        android:name=".SpacePlanarApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".SpacePlanAppHome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.settings.DeviceHeightSettings"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.settings.TiltCorrectionSettings"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.room.NewRoomMap"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.room.NewRoomMap2D"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.room.NewRoomMapSetHeight"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.room.NewRoomMapTextures"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.imageutils.CropImage"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.room.NewRoomMapSaveMap"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.room.ViewRoomMap"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.room.ViewRoomMap2D"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.room.ViewRoomMap3D"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.floors.NewFloorMap"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.floors.ViewFloorMap"
+            android:screenOrientation="sensorLandscape" >
+        </activity>
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.floors.LocationFloorChooser"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.help.Documentation"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+        <activity
+            android:name="com.adams.awcoe.spaceplanar.help.Faq"
+            android:screenOrientation="sensorLandscape">
+        </activity>
+    </application>
+
+</manifest>
