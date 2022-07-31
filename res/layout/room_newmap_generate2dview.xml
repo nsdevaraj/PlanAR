@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/roomNewMap2DViewFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.adams.awcoe.spaceplanar.room.NewRoomMap2DRenderer
+            android:id="@+id/room_newmap_2drenderer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.adams.awcoe.spaceplanar.room.NewRoomMap2DRenderer>
+
+        <!-- Botton Information Bar -->
+		<!-- <FrameLayout 
+			android:layout_width="match_parent"
+			android:layout_height="60dp"
+			android:background="@drawable/roundedcorners_2"
+			android:gravity="center_horizontal"
+			android:layout_gravity="bottom" >
+		    <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="30dp"
+	            android:gravity="center_horizontal"
+	            android:layout_gravity="top" >
+	            <TextView
+	                android:id="@+id/room_newmap_noOfWalls"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingRight="50dp"
+	                android:layout_marginTop="2dp"
+	                android:text="No of Walls in Room: "
+	                android:textColor="#FFFFFF" />
+	            <TextView
+	                android:id="@+id/room_newmap_heightofRoom"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingRight="50dp"
+	                android:layout_marginTop="2dp"
+	                android:text="Height of Room: "
+	                android:textColor="#FFFFFF" />
+		    </LinearLayout>    
+			<LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="30dp"
+	            android:gravity="center_horizontal"
+	            android:layout_gravity="bottom" >
+	            <TextView
+	                android:id="@+id/room_newmap_area"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingRight="50dp"
+	                android:layout_marginTop="2dp"
+	                android:text="Area of Room : "
+	                android:textColor="#FFF" />
+	
+	            <TextView
+	                android:id="@+id/room_newmap_wordlocation"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingRight="50dp"
+	                android:layout_marginTop="2dp"
+	                android:text="Real World Location : Not Set"
+	                android:textColor="#FFF" />
+		    </LinearLayout>
+		</FrameLayout> -->
+        
+        <LinearLayout
+            android:id="@+id/room_newmap_walltex_container"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/roundedcorners_1"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+            
+            <TextView android:id="@+id/room_newmap_walltex_text"
+                android:layout_width="match_parent"
+                android:layout_height="30px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_marginTop="10px"/>
+            
+            <ImageView android:id="@+id/room_newmap_walltex_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15px"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"/>
+            
+         </LinearLayout>   
+         
+        
+        <LinearLayout
+            android:id="@+id/rotationContainer"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left|bottom"
+	        android:layout_marginBottom="5dp"
+	        android:layout_marginLeft="10dp"
+	        android:orientation="vertical"
+	        android:background="@drawable/roundedcorners_1">
+            
+            <ImageButton android:id="@+id/room_newmap_antirotation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/room_newmaprotate_left"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"/>
+            
+            <ImageButton android:id="@+id/room_newmap_rotation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/room_newmaprotate_right"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"/>
+            
+            <ImageButton android:id="@+id/room_newmap_regularize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"
+                android:src="@drawable/room_viewmaps_regularizeicon"/>
+            
+         </LinearLayout> 
+
+    </FrameLayout>
+
+</LinearLayout>

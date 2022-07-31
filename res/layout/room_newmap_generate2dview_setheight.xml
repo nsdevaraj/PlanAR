@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_room_newmap_setheight_frame"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <!-- GL Surface View Container -->
+        <SurfaceView
+            android:id="@+id/room_newmap_setheight_surface"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        
+        <!-- Draw Sensor Compass On Top Left -->
+        <com.adams.awcoe.spaceplanar.utils.SensorCompass
+            android:id="@+id/sensor_compass"
+            android:layout_width="160dp"
+            android:layout_height="170dp"
+            android:layout_gravity="top|left" >
+        </com.adams.awcoe.spaceplanar.utils.SensorCompass>
+        
+        <LinearLayout
+			android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/roundedcorners_2"
+            android:gravity="center_horizontal" >       
+       		<TextView
+            	android:id="@+id/setheight_currentHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/roundedcorners_1" >
+
+            <ImageView
+                android:id="@+id/room_newmap_setheight_mark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/room_newmap_createmarker" />
+
+        </LinearLayout>
+   </FrameLayout>
+   
+
+</RelativeLayout>

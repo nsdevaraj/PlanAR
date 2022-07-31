@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item 
+        android:id="@+id/room_newmap_2d_details"
+        android:icon="@drawable/room_2d_details"
+        android:title="View Room Details"
+        android:titleCondensed="View Room Details" >
+    </item>
+    <item
+        android:id="@+id/room_view_export_roommodel"
+        android:icon="@drawable/floor_newfloor_exportobj"
+        android:title="Export Room Model"
+        android:titleCondensed="Export Room Model">
+    </item>
+    <item
+        android:id="@+id/room_view_3d_roommodel"
+        android:icon="@drawable/view_3d_model"
+        android:title="View 3D Model"
+        android:titleCondensed="View 3D Model">
+    </item>
+    
+</menu>

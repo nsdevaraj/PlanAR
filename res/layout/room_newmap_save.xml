@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/DashBoard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical">
+        	<LinearLayout
+		        android:id="@+id/container"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:orientation="vertical"
+		        android:padding="10dp" >		        
+		        <LinearLayout
+		            android:id="@+id/room_newmap_mapinfo_1"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:padding="5dp" >
+		            <TextView
+		                android:id="@+id/room_newmap_mapNameLabel"
+		                android:layout_width="200dp"
+		                android:layout_height="wrap_content"
+		                android:text="Room Map Name: " />		
+		            <EditText
+		                android:id="@+id/room_newmap_mapName"
+		                android:layout_width="100dp"
+		                android:layout_height="50dp"
+		                android:layout_gravity="right"
+		                android:layout_weight="0.5"
+		                android:hint="Enter Map Name"
+		                android:maxLength="20"
+		                android:textColor="#8b8989"
+		                android:textSize="12sp"
+		                android:typeface="sans" />
+				</LinearLayout>
+				<LinearLayout
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="horizontal"
+		            android:padding="10dp" >
+		            <TextView
+		                android:id="@+id/room_newmap_floorNameLabel"
+		                android:layout_width="100dp"
+		                android:layout_height="wrap_content"
+		                android:text="Add to Floor: " />
+		
+		            <CheckBox
+		                android:id="@+id/room_newmap_checkAddToExisting"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:checked="false"
+		                android:textColor="#fffacd"
+		                android:textSize="12sp"
+		                android:text="Existing Floor  " />
+		            <RelativeLayout
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		                <Spinner
+		                    android:id="@+id/room_newmap_floorname_spinner"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:visibility="invisible" />
+		                <EditText
+		                    android:id="@+id/room_newmap_newfloorName"
+		                    android:layout_width="fill_parent"
+		                    android:layout_height="50dp"
+		                    android:layout_gravity="right"
+		                    android:maxLength="20"
+		                    android:hint="Enter New Floor Name"
+		                    android:textColor="#fffacd"
+		                    android:textSize="12sp"
+		                    android:typeface="sans" />
+		            </RelativeLayout>
+		        </LinearLayout>
+		        <LinearLayout
+		            android:id="@+id/room_newmap_mapinfo_3"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:padding="10dp" >
+		            <TextView
+		                android:id="@+id/room_newmap_mapLocationLabel"
+		                android:layout_width="200dp"
+		                android:layout_height="wrap_content"
+		                android:text="World Location: " />
+		
+		            <TextView
+		                android:id="@+id/room_newmap_mapLocation"
+		                android:layout_width="100dp"
+		                android:layout_height="50dp"
+		                android:layout_gravity="right"
+		                android:layout_weight="0.5"
+		                android:text="Real World Location"
+		                android:textColor="#fffacd"
+		                android:textSize="12dp"
+		                android:typeface="sans" />
+				</LinearLayout>
+		        <Button
+		            android:id="@+id/room_newmap_mapSave"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_horizontal"
+		            android:layout_marginTop="5dp"
+		            android:text="Save Map" />
+			</LinearLayout>
+		</LinearLayout>
+</ScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    style="@style/DashBoard" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <!-- GL Surface View Container -->
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/room_newmap_3dviewsurface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/spaceplanar_background" />
+        </LinearLayout> -->
+
+        <!-- Translate Controls -->
+        <!-- <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/room_newmap_leftTranslateMap"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/go_left" />
+            
+            <ImageButton
+                android:id="@+id/room_newmap_upTranslateMap"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:src="@drawable/go_up" />
+            
+            <ImageButton
+                android:id="@+id/room_newmap_centerTranslateMap"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:src="@drawable/go_center" />
+
+            <ImageButton
+                android:id="@+id/room_newmap_downTranslateMap"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                android:src="@drawable/go_down" />
+
+            <ImageButton
+                android:id="@+id/room_newmap_rightTranslateMap"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/go_right" />
+        </LinearLayout> -->
+    </FrameLayout>
+
+</LinearLayout>

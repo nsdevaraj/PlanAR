@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/room_newmap_2d_details"
+        android:icon="@drawable/room_2d_details"
+        android:title="View Room Details"
+        android:titleCondensed="View Room Details" >
+    </item>
+    <item 
+        android:id="@+id/room_newmap_2d_setHeight"
+        android:icon="@drawable/room_newmap_setheight"
+        android:title="Set Room Height"
+        android:titleCondensed="Set Room Height" >
+    </item>
+    <item
+        android:id="@+id/room_newmap_retrivegpsloc"
+        android:icon="@drawable/room_newmap_retrivelocgps"
+        android:title="Find World Location"
+        android:titleCondensed="Find World Location">        
+    </item>
+    <item
+        android:id="@+id/room_newmap_saveMap"
+        android:icon="@drawable/room_newmap_savemap"
+        android:title="Save Map"
+        android:titleCondensed="Save Map">
+    </item>
+    <item
+        android:id="@+id/room_newmap_edit_texture"
+        android:icon="@drawable/room_newmap_edit_texture"
+        android:visible="false"
+        android:title="Edit Texture"        
+        android:titleCondensed="Edit Texture">
+        <menu>
+            <item
+		        android:id="@+id/room_newmap_modify_texture"
+		        android:icon="@drawable/room_newmap_modify_texture"
+		        android:title="Modify Texture"
+		        android:titleCondensed="Modify Texture">
+		    </item>
+		    <item
+		        android:id="@+id/room_newmap_reset_texture"
+		        android:icon="@drawable/room_newmap_reset_texture"
+		        android:title="Reset Texture"
+		        android:titleCondensed="Reset Texture">
+		    </item>
+        </menu>
+    </item>
+</menu>

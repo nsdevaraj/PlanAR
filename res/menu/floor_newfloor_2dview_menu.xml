@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/floor_newfloor_viewRoomModel"
+        android:icon="@drawable/view_2d_model"        
+        android:title="View Room Model"
+        android:titleCondensed="View Room Model">
+    </item>
+    <item
+        android:id="@+id/floor_newfloor_saveobjformat"
+        android:icon="@drawable/floor_newfloor_exportobj"
+        android:title="Export to 3D Wavefront OBJ"
+        android:titleCondensed="Export to 3D Wavefront OBJ">
+    </item>
+    <item
+        android:id="@+id/floor_newfloor_saveModel"
+        android:icon="@drawable/room_newmap_savemap"
+        android:title="Save Floor Model"
+        android:titleCondensed="Save Floor Model">        
+    </item>
+
+</menu>

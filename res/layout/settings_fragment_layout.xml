@@ -1,0 +1,24 @@
+<com.adams.awcoe.spaceplanar.utils.UIGridViewGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    style="@style/DashBoard">
+	
+	
+	<!--  Settings Button -->
+    <Button
+        android:id="@+id/btn_deviceHeightSettings"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/selector_settings"
+        android:text="Adjust Viewing Height"
+        android:onClick="deviceSettingsButtonClick"/>
+	
+   <Button
+        android:id="@+id/btn_tiltSettings"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/selector_settings_tilt"
+        android:text="Calibrate Your Device"
+        android:onClick="tiltSettingsButtonClick"/>
+   
+</com.adams.awcoe.spaceplanar.utils.UIGridViewGroup>

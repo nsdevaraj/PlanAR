@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- Draw Augmented Surface on whole Screen -->
+
+        <SurfaceView
+            android:id="@+id/preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <!-- Draw Sensor Compass On Top Right -->
+
+        <com.adams.awcoe.spaceplanar.utils.SensorCompass
+            android:id="@+id/sensor_compass"
+            android:layout_width="160dp"
+            android:layout_height="170dp"
+            android:layout_gravity="top|right" >
+        </com.adams.awcoe.spaceplanar.utils.SensorCompass>
+
+        <!-- Draw animation marker (visible only when marker is generated) -->
+
+        <ImageView
+            android:id="@+id/anim_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/room_newmap_animmark" />
+
+	<!-- Button for generating Markers -->
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/roundedcorners_1" >
+
+            <ImageView
+                android:id="@+id/room_newmap_createMarker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/room_newmap_createmarker" />
+
+        </LinearLayout>
+        
+        <!-- Control Buttons for Markers -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/roundedcorners_1" >
+
+        <ImageView
+            android:id="@+id/room_newmap_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/room_newmap_delete_icon" />
+
+                <ImageView
+                    android:id="@+id/room_newmap_delete_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/room_newmap_deleteall_icon" />
+
+                <ImageView
+                    android:id="@+id/room_newmap_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/room_newmap_done_icon" />
+
+    </LinearLayout>
+    
+    <!-- <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/roundedcorners_2" >
+
+            <TextView
+                android:id="@+id/viewAngle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="50dp"
+                android:paddingTop="10dp"
+                android:text="Angle of View :"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/deviceHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dp"
+                android:text="Device Height:"
+                android:textColor="#FFFFFF" />
+        </LinearLayout> -->
+    
+    <!-- Botton Information and Control Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/roundedcorners_2"
+            android:gravity="center_horizontal" >
+
+            <!-- <TextView
+                android:id="@+id/viewAngle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="50dp"
+                android:paddingTop="10dp"
+                android:text="Angle of View :"
+                android:textColor="#FFFFFF" /> -->
+
+            <TextView
+                android:id="@+id/deviceHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dp"
+                android:text="Device Height:"
+                android:textColor="#FFFFFF" />
+
+            <SeekBar
+                android:id="@+id/adjustDeviceHeight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.17"
+                android:max="100"
+                android:paddingRight="10dp"
+                android:paddingTop="3dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

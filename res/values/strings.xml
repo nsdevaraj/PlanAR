@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SpacePlanARInit!</string>
+    <string name="app_name">SPlanAR2.3.3</string>
+    <string-array name="texture_action_list">
+        <item>Texture</item>
+        <item>Modify Texture</item>
+        <item>Reset Texture</item>
+    </string-array>
+	<string-array name="documentation_mainnav_list">
+	    <item>-- Select Document Type --</item>
+	    <item>Room</item>
+	    <item>Floor</item>
+	    <item>Settings</item>
+	</string-array>
+	<string-array name="documentation_subnav_room_list">
+	    <item>Create Room Map - Mark Room Map</item>
+	    <item>Create Room Map - Set Textures</item>
+	    <item>Create Room Map - Regularization</item>
+	    <item>Create Room Map - Save Room Map</item>
+	    <item>View Room Map</item>
+	</string-array>
+	<string-array name="documentation_subnav_floor_list">
+	    <item>Create Floor Map - Construct Floor</item>
+	    <item>Create Floor Map - Export and Save</item>
+	    <item>View Floor Map</item>
+	</string-array>
+	<string-array name="documentation_subnav_settings_list">
+	    <item>Adjust View Height</item>
+	    <item>Calibrate Device</item>
+	</string-array>
+</resources>

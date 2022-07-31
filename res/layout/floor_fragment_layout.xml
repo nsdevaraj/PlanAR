@@ -1,0 +1,24 @@
+<com.adams.awcoe.spaceplanar.utils.UIGridViewGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    style="@style/DashBoard">
+	
+	<!--  Draw New Floor Button -->
+    <Button
+        android:id="@+id/btn_floornewmap"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/selector_floor_newfloor"
+        android:text="Construct New Floor Map"
+        android:onClick="constructNewFloorButtonClick" />
+	
+	<!--  View Floor Maps Button -->
+    <Button
+        android:id="@+id/btn_floorviewmaps"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/selector_floor_viewmaps"
+        android:text="View Floor Maps" 
+        android:onClick="viewFloorMapsButtonClick"/>
+
+</com.adams.awcoe.spaceplanar.utils.UIGridViewGroup>

@@ -1,0 +1,24 @@
+<com.adams.awcoe.spaceplanar.utils.UIGridViewGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    style="@style/DashBoard">
+	
+	
+	<!--  Settings Button -->
+    <Button
+        android:id="@+id/btn_documentation"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/selector_help_documentation"
+        android:text="Documentation"
+        android:onClick="documentationButtonClick"/>
+	
+   <Button
+        android:id="@+id/btn_faq"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/selector_help_faq"
+        android:text="FAQs"
+        android:onClick="faqButtonClick"/>
+   
+</com.adams.awcoe.spaceplanar.utils.UIGridViewGroup>

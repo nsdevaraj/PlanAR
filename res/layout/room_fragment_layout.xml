@@ -1,0 +1,24 @@
+<com.adams.awcoe.spaceplanar.utils.UIGridViewGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    style="@style/DashBoard">
+	 
+	<!--  New Room Button -->
+    <Button
+        android:id="@+id/btn_roomnewmap"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/selector_room_newmap"
+        android:text="Create New Room Map"
+        android:onClick="newRoomMapButtonClick" />
+    
+    <!--  View Room Maps Button -->
+    <Button
+        android:id="@+id/btn_roomviewmaps"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/selector_room_viewmap"
+        android:text="View Room Maps"
+        android:onClick="viewRoomMapsButtonClick" />
+
+</com.adams.awcoe.spaceplanar.utils.UIGridViewGroup>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/DashBoard"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+         
+         <TextView
+        android:id="@+id/camHeightSettingsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Height From Ground: "
+        style="@style/DashboardButton"
+        android:textAppearance="?android:attr/textAppearanceMedium" />  
+        
+        <TextView
+	        android:paddingLeft="5dp"
+	        android:id="@+id/camHeightSettingsValue"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        style="@style/DashboardButton"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/camHeightSettingsBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:padding="10dp"
+        android:max="100" />
+
+</LinearLayout>

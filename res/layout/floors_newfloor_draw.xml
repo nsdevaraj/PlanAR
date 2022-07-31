@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+   <FrameLayout
+        android:id="@+id/floors_NewFloor2DViewFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+            
+		<com.adams.awcoe.spaceplanar.floors.NewFloorMap2DRenderer
+            android:id="@+id/floor_newfloor_2drenderer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.adams.awcoe.spaceplanar.floors.NewFloorMap2DRenderer>     
+       <LinearLayout
+           android:layout_width="150dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right" >
+           <ListView
+                android:id="@+id/floor_roomsmapslist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="#b5b5b5"
+                android:dividerHeight="2dp"
+                android:listSelector="@drawable/list_selector" />
+           
+       </LinearLayout>
+        
+       <LinearLayout
+            android:id="@+id/rotationContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:background="@drawable/roundedcorners_1"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+            
+            <ImageButton android:id="@+id/floor_room_antirotation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/room_newmaprotate_left"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"/>
+            
+            <ImageButton android:id="@+id/floor_room_rotation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/room_newmaprotate_right"
+                android:layout_marginBottom="5px"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="5px"
+                android:layout_marginTop="5px"/>
+         </LinearLayout>
+        </FrameLayout>
+       
+</LinearLayout>
